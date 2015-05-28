@@ -14,9 +14,10 @@
   @-webkit-keyframes bounceIn {
     0% {
       opacity: 0;
-      -webkit-transform: scale(.3);
+/*      -webkit-transform: scale(.3);*/
     }
 
+/*
     50% {
       opacity: 1;
       -webkit-transform: scale(1.05);
@@ -25,18 +26,21 @@
     70% {
       -webkit-transform: scale(.9);
     }
+*/
 
     100% {
-      -webkit-transform: scale(1);
+        opacity:1
+/*      -webkit-transform: scale(1);*/
     }
   }
 
   @keyframes bounceIn {
     0% {
       opacity: 0;
-      transform: scale(.3);
+/*      transform: scale(.3);*/
     }
 
+/*
     50% {
       opacity: 1;
       transform: scale(1.05);
@@ -45,9 +49,11 @@
     70% {
       transform: scale(.9);
     }
+*/
 
     100% {
-      transform: scale(1);
+        opacity: 1;
+/*      transform: scale(1);*/
     }
   }
 
@@ -60,8 +66,8 @@
   }
 
   .d3-tip.animate {
-    animation: bounceIn 0.2s ease-out;
-    -webkit-animation: bounceIn 0.2s ease-out;
+    animation: bounceIn 2s ease-out;
+    -webkit-animation: bounceIn 2s ease-out;
   }
 
   .d3-tip span {
